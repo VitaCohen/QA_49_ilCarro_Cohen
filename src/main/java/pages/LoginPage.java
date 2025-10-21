@@ -29,6 +29,13 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//h2[contains(text(),'Login or Password incorrect')]")
     WebElement popUpTextLoggedIncorrect;
 
+    @FindBy(xpath = "//span[text() = 'Click here']")
+    WebElement btnNotRegistered;
+
+    public void clickBtnNotRegistered(){
+        btnNotRegistered.click();
+    }
+
 
     public void typeLoginForm(User user) {
         inputEmail.sendKeys(user.getUsername());
