@@ -30,7 +30,7 @@ public class LoginPage extends BasePage {
     WebElement popUpTextLoggedIncorrect;
 
 
-            public void typeLoginForm(User user) {
+    public void typeLoginForm(User user) {
         inputEmail.sendKeys(user.getUsername());
         inputPassword.sendKeys(user.getPassword());
         btnYalla.click();
@@ -39,6 +39,7 @@ public class LoginPage extends BasePage {
     public boolean isLoggedDisplayed() {
         return elementIsDisplayed(popUpTextLoggedSuccess);
     }
+
     public boolean isLoggedIncorrect() {
         return elementIsDisplayed(popUpTextLoggedIncorrect);
     }
