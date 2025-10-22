@@ -24,8 +24,6 @@ public class RegistrationTests extends ApplicationManager {
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
         registrationPage.typeRegistrationForm(user);
 
-
-        //Assert.assertTrue(loginPage.isLoggedDisplayed());
     }
 
 }

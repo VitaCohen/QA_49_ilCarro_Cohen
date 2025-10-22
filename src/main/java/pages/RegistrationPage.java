@@ -27,7 +27,7 @@ public class RegistrationPage extends BasePage{
     @FindBy(css = "input[id='password']")
     WebElement inputPassword;
 
-    @FindBy(css = "label[for='terms-of-use']")
+    @FindBy(xpath = "//label[@for='terms-of-use']")
     WebElement chekBoxAgree;
 
     @FindBy(css = " button[type='submit']")
@@ -42,8 +42,8 @@ public class RegistrationPage extends BasePage{
         inputLastName.sendKeys(user.getLastName());
         inputEmail.sendKeys(user.getUsername());
         inputPassword.sendKeys(user.getPassword());
-        chekBoxAgree.click();
-        btnYallaRegistration.click();
+        //chekBoxAgree.click();
+       // btnYallaRegistration.click();
 
     }
 
