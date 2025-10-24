@@ -33,4 +33,19 @@ public class LoginTests extends ApplicationManager {
         loginPage.typeLoginForm(user);
         Assert.assertTrue(loginPage.isLoggedIncorrect());
     }
+
+    //Homework_7
+    @Test
+    public void loginErrorTextUnderFieldNegativeTest_wrongEmail(){
+        User user = User.builder()
+                .username("wrong email")
+                .firstName("123456Aa!")
+                .build();
+        new  HomePage(getDriver()).clickBtnLoginHeader();
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.typeLoginFormWrongEmail(user);
+        Assert.assertTrue(loginPage.isEmailWrong());
+    }
+
+
 }

@@ -33,6 +33,23 @@ public class LoginPage extends BasePage {
     WebElement btnNotRegistered;
 
 
+    //Homework_7
+    @FindBy(xpath = "//div[@class = 'error']")
+    WebElement textErrorUnderFieldEmail;
+
+
+    public void typeLoginFormWrongEmail(User user) {
+        inputEmail.sendKeys(user.getUsername());
+        inputPassword.click();
+
+    }
+
+
+    public boolean isEmailWrong() {
+        return elementIsDisplayed(textErrorUnderFieldEmail);
+    }
+
+
 
     public void clickBtnNotRegistered(){
         btnNotRegistered.click();
@@ -47,12 +64,15 @@ public class LoginPage extends BasePage {
     }
 
     public boolean isLoggedDisplayed() {
+
         return elementIsDisplayed(popUpTextLoggedSuccess);
     }
 
     public boolean isLoggedIncorrect() {
         return elementIsDisplayed(popUpTextLoggedIncorrect);
     }
+
+
 
 
 }

@@ -11,6 +11,7 @@ public abstract class BasePage {
     }
 
     public boolean elementIsDisplayed(WebElement element){
+
         return element.isDisplayed();
     }
 
