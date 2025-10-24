@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 public abstract class BasePage {
     static WebDriver driver;
 
-    public static void setDriver(){
+    public static void setDriver(WebDriver wd) {
+        driver = wd;
     }
 
     public boolean elementIsDisplayed(WebElement element){

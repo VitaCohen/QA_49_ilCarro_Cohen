@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="HW_6 Registration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/UserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,7 @@
     "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
     "Gradle.LoginTests.loginPositiveTest.executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
+    "Gradle.SignUpTests.registrationPositiveTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -56,10 +61,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.registrationPositiveTest">
+  <component name="RunManager" selected="Gradle.SignUpTests.registrationPositiveTest">
     <configuration name="HomeTests.startTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -156,8 +162,33 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SignUpTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.SignUpTests.registrationPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SignUpTests.registrationPositiveTest" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
         <item itemvalue="Gradle.LoginTests.loginNegativeTest_wrongPassword" />
@@ -206,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761076609914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HW_6 Registration">
+      <option name="closed" value="true" />
+      <created>1761153576056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761153576056</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

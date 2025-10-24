@@ -32,9 +32,12 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//span[text() = 'Click here']")
     WebElement btnNotRegistered;
 
+
+
     public void clickBtnNotRegistered(){
         btnNotRegistered.click();
     }
+
 
 
     public void typeLoginForm(User user) {
