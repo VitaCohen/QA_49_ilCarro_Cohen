@@ -37,18 +37,28 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//div[@class = 'error']")
     WebElement textErrorUnderFieldEmail;
 
+    @FindBy(xpath = "//div[contains(text(), 'Password is required')]")
+    WebElement textRequiredUnderFieldEmail;
 
-    public void typeLoginFormWrongEmail(User user) {
+       public void typeLoginFormWrongEmail(User user) {
         inputEmail.sendKeys(user.getUsername());
         inputPassword.click();
-
     }
-
 
     public boolean isEmailWrong() {
         return elementIsDisplayed(textErrorUnderFieldEmail);
     }
 
+    public void typeLoginFormWithoutPassword(User user) {
+        inputEmail.sendKeys(user.getUsername());
+        inputPassword.click();
+        btnYalla.click();
+    }
+
+    public boolean isPasswordRequired() {
+        return elementIsDisplayed(textRequiredUnderFieldEmail);
+    }
+//=======================================================//
 
 
     public void clickBtnNotRegistered(){

@@ -47,5 +47,16 @@ public class LoginTests extends ApplicationManager {
         Assert.assertTrue(loginPage.isEmailWrong());
     }
 
+    @Test
+    public void loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword(){
+        User user = User.builder()
+                .username("iv@mail.com")
+                .firstName("")
+                .build();
+        new  HomePage(getDriver()).clickBtnLoginHeader();
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.typeLoginFormWithoutPassword(user);
+        Assert.assertTrue(loginPage.isPasswordRequired());
+    }
 
 }
