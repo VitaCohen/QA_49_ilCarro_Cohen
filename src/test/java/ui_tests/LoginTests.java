@@ -35,7 +35,7 @@ public class LoginTests extends ApplicationManager {
     }
 
     //Homework_7
-    @Test
+    @Test(enabled = false)
     public void loginErrorTextUnderFieldNegativeTest_wrongEmail(){
         User user = User.builder()
                 .username("wrong email")
@@ -43,11 +43,11 @@ public class LoginTests extends ApplicationManager {
                 .build();
         new  HomePage(getDriver()).clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
-        loginPage.typeLoginFormWrongEmail(user);
-        Assert.assertTrue(loginPage.isEmailWrong());
+       // loginPage.typeLoginFormWrongEmail(user);
+      //  Assert.assertTrue(loginPage.isEmailWrong());
     }
 
-    @Test
+    @Test(enabled = false)
     public void loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword(){
         User user = User.builder()
                 .username("iv@mail.com")
@@ -55,8 +55,35 @@ public class LoginTests extends ApplicationManager {
                 .build();
         new  HomePage(getDriver()).clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
-        loginPage.typeLoginFormWithoutPassword(user);
-        Assert.assertTrue(loginPage.isPasswordRequired());
+      //  loginPage.typeLoginFormWithoutPassword(user);
+        //Assert.assertTrue(loginPage.isPasswordRequired());
+    }
+
+    //======================================================//
+
+
+    @Test
+    public void loginNegativeTest_emptyPassword(){
+        User user = User.builder()
+                .username("bilbo_baggins_12345@mail.com")
+                .password("")
+                .build();
+        new HomePage(getDriver()).clickBtnLoginHeader();
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.typeLoginForm(user);
+        Assert.assertTrue(loginPage.isTextInErrorPresent("Password is required"));
+    }
+
+    @Test
+    public void loginNegativeTest_emailWOAt(){
+        User user = User.builder()
+                .username("bilbo_baggins_12345mail.com")
+                .password("123456Aa!")
+                .build();
+        new HomePage(getDriver()).clickBtnLoginHeader();
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.typeLoginForm(user);
+        Assert.assertTrue(loginPage.isTextInErrorPresent("It'snot look like email"));
     }
 
 }
