@@ -1,5 +1,6 @@
 package pages;
 
+import net.datafaker.transformations.sql.SqlTransformer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ public abstract class BasePage {
     static WebDriver driver;
 
     public static void setDriver(WebDriver wd) {
+
         driver = wd;
     }
 
@@ -47,9 +49,16 @@ public abstract class BasePage {
             case SEARCH -> {
                 return (T) new HomePage(driver);
             }
+            case SIGNUP -> {
+                return (T) new SignUpPage(driver);
+            }
+            case LOGIN -> {
+                return (T) new LoginPage(driver);
+            }
             case LET_THE_CAR_WORK -> {
                 return (T) new LetTheCarWorkPage(driver);
             }
+
             default -> throw new IllegalArgumentException("Invalid parameter headerMenuItem");
         }
 

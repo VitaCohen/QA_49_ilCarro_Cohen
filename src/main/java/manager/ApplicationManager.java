@@ -9,8 +9,8 @@ import java.time.Duration;
 
 public class ApplicationManager {
 
-    private WebDriver driver;
-    public WebDriver getDriver(){
+    private static  WebDriver driver;
+    public static WebDriver getDriver(){
         return driver;
     }
 
