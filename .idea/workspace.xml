@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework_7">
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Assert&#10;Error list&#10;Check box">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -283,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761421451329</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Assert&#10;Error list&#10;Check box">
+      <option name="closed" value="true" />
+      <created>1761587143266</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761587143266</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +309,7 @@
     <MESSAGE value="HW_6 Registration" />
     <MESSAGE value="SignUp" />
     <MESSAGE value="Homework_7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework_7" />
+    <MESSAGE value="Assert&#10;Error list&#10;Check box" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assert&#10;Error list&#10;Check box" />
   </component>
 </project>
