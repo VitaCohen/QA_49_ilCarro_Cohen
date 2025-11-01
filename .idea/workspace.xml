@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" afterDir="false" />
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()&#10;LetTheCarWorkTests @BeforeMethod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,27 +49,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.HomeTests.startTest.executor": "Run",
-    "Gradle.LetTheCarWorkTests.addNewCarPositiveTest.executor": "Run",
-    "Gradle.LoginTests.loginErrorTextUnderFieldNegativeTest_wrongEmail.executor": "Run",
-    "Gradle.LoginTests.loginNegativeTest_emailWOAt.executor": "Run",
-    "Gradle.LoginTests.loginNegativeTest_emptyPassword.executor": "Run",
-    "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
-    "Gradle.LoginTests.loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword.executor": "Run",
-    "Gradle.LoginTests.loginPositiveTest.executor": "Run",
-    "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
-    "Gradle.SignUpTests.registrationNegativeTest_emptyName.executor": "Run",
-    "Gradle.SignUpTests.registrationPositiveTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.HomeTests.startTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LetTheCarWorkTests.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginErrorTextUnderFieldNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativeTest_emailWOAt.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativeTest_emptyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SignUpTests.registrationNegativeTest_emptyName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SignUpTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="utils" />
@@ -300,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761757342938</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()&#10;LetTheCarWorkTests @BeforeMethod">
+      <option name="closed" value="true" />
+      <created>1761763339250</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761763339250</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,6 +325,7 @@
     <MESSAGE value="Homework_7" />
     <MESSAGE value="Assert&#10;Error list&#10;Check box" />
     <MESSAGE value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()" />
+    <MESSAGE value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()&#10;LetTheCarWorkTests @BeforeMethod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()&#10;LetTheCarWorkTests @BeforeMethod" />
   </component>
 </project>
