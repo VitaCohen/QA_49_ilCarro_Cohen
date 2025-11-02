@@ -12,10 +12,11 @@ build/
 *.iws
 *.iml
 *.ipr
+*.properties
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-src/test/properties
+properties
 
 ### Eclipse ###
 .apt_generated
