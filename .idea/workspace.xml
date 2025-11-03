@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 8 RetryAnalizer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/properties/base.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 8 PropertiesReader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RetryAnalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RetryAnalizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +319,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762113856975</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Homework 8 PropertiesReader">
+      <option name="closed" value="true" />
+      <created>1762115420307</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762115420307</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Homework 8 PropertiesReader">
+      <option name="closed" value="true" />
+      <created>1762115521846</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1762115521846</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,6 +358,7 @@
     <MESSAGE value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()" />
     <MESSAGE value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()&#10;LetTheCarWorkTests @BeforeMethod" />
     <MESSAGE value="Homework 8 RetryAnalizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 8 RetryAnalizer" />
+    <MESSAGE value="Homework 8 PropertiesReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 8 PropertiesReader" />
   </component>
 </project>
