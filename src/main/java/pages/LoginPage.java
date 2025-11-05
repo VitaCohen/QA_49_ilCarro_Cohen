@@ -65,9 +65,7 @@ public class LoginPage extends BasePage {
         btnNotRegistered.click();
     }
 
-    baseUrl=https://ilcarro.web.app/search
-    login=iv@mail.com
-            password=123456Aa!
+
 
     public void typeLoginForm(User user) {
         inputEmail.sendKeys(user.getUsername());
