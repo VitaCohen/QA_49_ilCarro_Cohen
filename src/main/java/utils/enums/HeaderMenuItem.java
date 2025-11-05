@@ -1,4 +1,4 @@
-package utils;
+package utils.enums;
 
 public enum HeaderMenuItem {
     SEARCH("//a[@id ='0']"),
@@ -7,7 +7,7 @@ public enum HeaderMenuItem {
     SIGNUP(" //a[text() = ' Sign up ']"),
     LOGIN(" //a[text() = ' Log in ']"),
     LOGOUT("//a[text() =' Logout ']"),
-    DELLETE_ACCOUNT("//a[text() ='Delete account']");
+    DELETE_ACCOUNT("//a[text() ='Delete account']");
 
 
     private final String locator;
