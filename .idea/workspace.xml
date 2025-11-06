@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 8 PropertiesReader">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TermsOfUsePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" afterDir="false" />
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/enums/HeaderMenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +64,13 @@
     "Gradle.LoginTests.loginPositiveTest.executor": "Run",
     "Gradle.QA_49_ilCarro_Cohen [:PropertiesReader.main()].executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTestWOCity.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTestWOCityValidateErrorMessage.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest_emptyCity.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_invalidDate.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_invalidMonth.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_pastDate.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest_wrongCity.executor": "Run",
     "Gradle.SearchCarTests.searchPositiveTest.executor": "Run",
     "Gradle.SignUpTests.registrationNegativeTest_emptyName.executor": "Run",
@@ -91,8 +91,8 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SearchCarTests.searchNegativeTest_invalidMonth">
-    <configuration name="SearchCarTests.searchNegativeTest_emptyCity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate">
+    <configuration name="SearchCarTests.searchNegativeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -105,7 +105,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_emptyCity&quot;" />
+            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +116,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_invalidDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests.searchNegativeTestWOCity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_invalidDate&quot;" />
+            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTestWOCity&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,7 +140,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_invalidMonth" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests.searchNegativeTestWOCityValidateErrorMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,7 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_invalidMonth&quot;" />
+            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTestWOCityValidateErrorMessage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,7 +164,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_pastDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests.searchNegativeTest_afterOneYear" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_pastDate&quot;" />
+            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_afterOneYear&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,7 +188,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_wrongCity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests.searchNegativeTest_firstDateAfterSecondDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -201,7 +201,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_wrongCity&quot;" />
+            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_invalidMonth" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_invalidDate" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_pastDate" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_wrongCity" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_emptyCity" />
+        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate" />
+        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_afterOneYear" />
+        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest" />
+        <item itemvalue="Gradle.SearchCarTests.searchNegativeTestWOCityValidateErrorMessage" />
+        <item itemvalue="Gradle.SearchCarTests.searchNegativeTestWOCity" />
       </list>
     </recent_temporary>
   </component>
@@ -375,7 +375,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762192078958</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="SearchCarTests, Date">
+      <option name="closed" value="true" />
+      <created>1762370007698</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1762370007698</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Homework 9">
+      <option name="closed" value="true" />
+      <created>1762370034854</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1762370034854</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -399,6 +415,8 @@
     <MESSAGE value="Homework 7&#10;HeaderMenuItem Class&#10;clickButtonMenuHeader()&#10;LetTheCarWorkTests @BeforeMethod" />
     <MESSAGE value="Homework 8 RetryAnalizer" />
     <MESSAGE value="Homework 8 PropertiesReader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 8 PropertiesReader" />
+    <MESSAGE value="SearchCarTests, Date" />
+    <MESSAGE value="Homework 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 9" />
   </component>
 </project>
