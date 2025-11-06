@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,7 @@ import utils.PropertiesReader;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.util.Locale;
 
 public class HomePage extends BasePage {
 
@@ -37,6 +39,7 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//button[@type ='submit']")
     WebElement btnYalla;
+
 
     public void clickBtnLoginHeader() {
 
@@ -76,6 +79,36 @@ public class HomePage extends BasePage {
         btnYalla.click();
 
     }
+
+
+    @FindBy(xpath = "//button[@aria-label='Choose month and year']")
+    WebElement calendarBtnYear;
+
+
+    private void typeCalendar(LocalDate date) {
+        calendarBtnYear.click();
+        String year = Integer.toString(date.getYear());  //2025   2026
+        WebElement btnYear = driver.findElement(By.xpath("//td[@aria-label='" + year + "']"));
+        //  "//td[@aria-label='"+year+"']" --> "//td[@aria-label='"   "2026"   "']" -->  //td[@aria-label='2026']
+        btnYear.click();
+
+        String month = date.getMonth().toString();
+        System.out.println(month);// DECEMBER --> December
+        month = month.toLowerCase();
+        String first = month.substring(0, 1).toUpperCase();
+        month = month.replace(month.substring(0, 1), first);
+        System.out.println(month);
+    }
+
+
+    public void typeSearchFormCalendar(String city, LocalDate dateFrom, LocalDate dateTo) {
+        inputCity.sendKeys(city);
+        inputDates.click();
+        typeCalendar(dateFrom);
+
+
+    }
+
 
     // Homework 9
 
