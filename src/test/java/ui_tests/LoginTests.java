@@ -9,14 +9,18 @@ import pages.HomePage;
 import pages.LoginPage;
 import utils.RetryAnalizer;
 
+import java.lang.reflect.Method;
+
 public class LoginTests extends ApplicationManager {
 
     @Test (retryAnalyzer = RetryAnalizer.class)
-    public void loginPositiveTest(){
+    public void loginPositiveTest(Method method){
         User user = User.builder()
                 .username("iv@mail.com")
                 .password("123456Aa!")
                 .build();
+        logger.info("start test " + method.getName()
+        + "with data " + user);
         new HomePage(getDriver()).clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.typeLoginForm(user);

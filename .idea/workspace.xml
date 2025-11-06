@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Homework 9">
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="added Search Negative tests, ClickWait">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,9 @@
     "Gradle.SearchCarTests.searchNegativeTest.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTestWOCity.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTestWOCityValidateErrorMessage.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_afterOneYear.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest_emptyCity.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest_invalidDate.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest_invalidMonth.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest_pastDate.executor": "Run",
@@ -391,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762370034854</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added Search Negative tests, ClickWait">
+      <option name="closed" value="true" />
+      <created>1762449380831</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1762449380831</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,6 +426,7 @@
     <MESSAGE value="Homework 8 PropertiesReader" />
     <MESSAGE value="SearchCarTests, Date" />
     <MESSAGE value="Homework 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 9" />
+    <MESSAGE value="added Search Negative tests, ClickWait" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Search Negative tests, ClickWait" />
   </component>
 </project>
