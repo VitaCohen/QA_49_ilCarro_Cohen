@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="added Search Negative tests, ClickWait">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="Started Calendar">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Experiments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/TestNGListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WDListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/HomeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +70,7 @@
     "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
     "Gradle.LoginTests.loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword.executor": "Run",
     "Gradle.LoginTests.loginPositiveTest.executor": "Run",
+    "Gradle.QA_49_ilCarro_Cohen [:Experiments.main()].executor": "Run",
     "Gradle.QA_49_ilCarro_Cohen [:PropertiesReader.main()].executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
     "Gradle.SearchCarTests.searchNegativeTest.executor": "Run",
@@ -95,7 +103,20 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SearchCarTests.searchPositiveTestCalendar">
+  <component name="RunManager" selected="Gradle.LoginTests.loginPositiveTest">
+    <configuration name="Experiments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.Experiments" />
+      <module name="QA_49_ilCarro_Cohen.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -120,7 +141,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests.searchNegativeTest_emptyCity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,31 +154,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_afterOneYear" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_afterOneYear&quot;" />
+            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_emptyCity&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SearchCarTests.searchPositiveTestCalendar" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
+        <item itemvalue="Gradle.SearchCarTests.searchPositiveTestCalendar" />
+        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_emptyCity" />
+        <item itemvalue="Application.Experiments" />
         <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_afterOneYear" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +408,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762452020590</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Started Calendar">
+      <option name="closed" value="true" />
+      <created>1762455430281</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1762455430281</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Started Calendar">
+      <option name="closed" value="true" />
+      <created>1762455443556</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1762455443556</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,6 +451,7 @@
     <MESSAGE value="SearchCarTests, Date" />
     <MESSAGE value="Homework 9" />
     <MESSAGE value="added Search Negative tests, ClickWait" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Search Negative tests, ClickWait" />
+    <MESSAGE value="Started Calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started Calendar" />
   </component>
 </project>

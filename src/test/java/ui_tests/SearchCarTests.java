@@ -4,11 +4,14 @@ import manager.ApplicationManager;
 import org.openqa.selenium.TimeoutException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
+import utils.TestNGListener;
 
 import java.time.LocalDate;
 
+@Listeners(TestNGListener.class)
 public class SearchCarTests extends ApplicationManager {
 
     HomePage homePage;
@@ -86,10 +89,11 @@ public class SearchCarTests extends ApplicationManager {
     @Test
     public  void searchPositiveTestCalendar() {
         String city = "Haifa";
-        LocalDate dateFrom = LocalDate.of(2025, 12, 1);
-        LocalDate dateTo = LocalDate.of(2025, 12, 22);
+        LocalDate dateFrom = LocalDate.of(2025, 12, 22);
+        LocalDate dateTo = LocalDate.of(2026, 5, 11);
 
         homePage.typeSearchFormCalendar(city, dateFrom, dateTo);
+        Assert.assertTrue(homePage.urlContains("results", 5));
 
     }
 
@@ -104,8 +108,8 @@ public class SearchCarTests extends ApplicationManager {
     @Test // BUG
     public void searchNegativeTest_emptyCity() {
         String city = "";
-        LocalDate dateFrom = LocalDate.of(2025, 12, 1);
-        LocalDate dateTo = LocalDate.of(2025, 12, 22);
+        LocalDate dateFrom = LocalDate.of(2026, 10, 1);
+        LocalDate dateTo = LocalDate.of(2026, 12, 22);
 
         homePage.typeSearchForm(city, dateFrom, dateTo);
         Assert.assertTrue(homePage.validateUrl());

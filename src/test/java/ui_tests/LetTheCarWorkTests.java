@@ -3,10 +3,12 @@ package ui_tests;
 import dto.User;
 import manager.ApplicationManager;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
+import utils.TestNGListener;
 import utils.enums.HeaderMenuItem;
-
+@Listeners(TestNGListener.class)
 public class LetTheCarWorkTests extends ApplicationManager {
 
 

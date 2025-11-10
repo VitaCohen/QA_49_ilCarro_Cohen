@@ -3,11 +3,16 @@ package ui_tests;
 import dto.User;
 import manager.ApplicationManager;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.RegistrationPage;
+import utils.TestNGListener;
 
+import java.lang.reflect.Method;
+
+@Listeners(TestNGListener.class)
 public class RegistrationTests extends ApplicationManager {
 
     @Test

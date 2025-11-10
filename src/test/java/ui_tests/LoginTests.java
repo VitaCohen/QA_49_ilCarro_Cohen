@@ -4,13 +4,16 @@ import dto.User;
 import manager.ApplicationManager;
 import org.checkerframework.checker.units.qual.A;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import utils.RetryAnalizer;
+import utils.TestNGListener;
 
 import java.lang.reflect.Method;
 
+@Listeners(TestNGListener.class)
 public class LoginTests extends ApplicationManager {
 
     @Test (retryAnalyzer = RetryAnalizer.class)
@@ -24,7 +27,7 @@ public class LoginTests extends ApplicationManager {
         new HomePage(getDriver()).clickBtnLoginHeader();
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.typeLoginForm(user);
-        logger.error("Examle error");
+        //logger.error("Examle error");
         Assert.assertTrue(loginPage.isLoggedDisplayed());
     }
 
