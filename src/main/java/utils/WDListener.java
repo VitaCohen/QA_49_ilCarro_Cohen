@@ -42,7 +42,7 @@ public class WDListener implements WebDriverListener {
     @Override
     public void afterClick(WebElement element) {
         WebDriverListener.super.afterClick(element);
-        logger.info("ofter click to element {}", element.getTagName());
+        logger.info("after click to element {}", element.getTagName());
     }
 
     @Override
