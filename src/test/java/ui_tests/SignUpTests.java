@@ -1,5 +1,6 @@
 package ui_tests;
 
+import data_provider.UserDP;
 import dto.User;
 import manager.ApplicationManager;
 import org.testng.Assert;
@@ -32,6 +33,18 @@ SignUpPage signUpPage;
 
 
     }
+
+    @Test(dataProvider = "dataProviderUserFile", dataProviderClass = UserDP.class)
+    public void  registrationPositiveTestWithDataProvider(User user){
+        signUpPage.typeLoginForm(user);
+        signUpPage.clickCheckBoxWithActions();
+        signUpPage.clickBtnYalla();
+        Assert.assertTrue(signUpPage.isTextDialogContainerPresent());
+
+
+    }
+
+
 
     @Test
     public void registrationNegativeTest_emptyName(){

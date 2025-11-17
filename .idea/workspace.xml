@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment=" Calendar type listener testNG, WDListener">
+      <change afterPath="$PROJECT_DIR$/src/main/java/data_provider/UserDP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data_scv/IlCarroSignUp.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WDListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WDListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,50 +52,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.HomeTests.startTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LetTheCarWorkTests.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginErrorTextUnderFieldNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginNegativeTest_emailWOAt.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginNegativeTest_emptyPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.QA_49_ilCarro_Cohen [:Experiments.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.QA_49_ilCarro_Cohen [:PropertiesReader.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTestWOCity.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTestWOCityValidateErrorMessage.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_afterOneYear.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_emptyCity.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_invalidDate.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_invalidMonth.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_pastDate.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchNegativeTest_wrongCity.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SearchCarTests.searchPositiveTestCalendar.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SignUpTests.registrationNegativeTest_emptyName.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SignUpTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.HomeTests.startTest.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarPositiveTest.executor": "Run",
+    "Gradle.LoginTests.loginErrorTextUnderFieldNegativeTest_wrongEmail.executor": "Run",
+    "Gradle.LoginTests.loginNegativeTest_emailWOAt.executor": "Run",
+    "Gradle.LoginTests.loginNegativeTest_emptyPassword.executor": "Run",
+    "Gradle.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
+    "Gradle.LoginTests.loginPasswordRequiredTextUnderFieldNegativeTest_emptyPassword.executor": "Run",
+    "Gradle.LoginTests.loginPositiveTest.executor": "Run",
+    "Gradle.QA_49_ilCarro_Cohen [:Experiments.main()].executor": "Run",
+    "Gradle.QA_49_ilCarro_Cohen [:PropertiesReader.main()].executor": "Run",
+    "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTestWOCity.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTestWOCityValidateErrorMessage.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_afterOneYear.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_emptyCity.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_invalidDate.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_invalidMonth.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_pastDate.executor": "Run",
+    "Gradle.SearchCarTests.searchNegativeTest_wrongCity.executor": "Run",
+    "Gradle.SearchCarTests.searchPositiveTest.executor": "Run",
+    "Gradle.SearchCarTests.searchPositiveTestCalendar.executor": "Run",
+    "Gradle.SignUpTests.registrationNegativeTest_emptyName.executor": "Run",
+    "Gradle.SignUpTests.registrationPositiveTest.executor": "Run",
+    "Gradle.SignUpTests.registrationPositiveTestWithDataProvider.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Projects IDEA/QA_49/QA_49_ilCarro_Cohen/src/test/resources/data_scv",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects IDEA\QA_49\QA_49_ilCarro_Cohen\src\test\resources\data_scv" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
       <recent name="utils" />
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests.loginPositiveTest">
+  <component name="RunManager" selected="Gradle.SignUpTests.registrationPositiveTestWithDataProvider">
     <configuration name="Experiments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.Experiments" />
       <module name="QA_49_ilCarro_Cohen.main" />
@@ -155,30 +162,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_firstDateAfterSecondDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="SearchCarTests.searchPositiveTestCalendar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -203,13 +186,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SignUpTests.registrationPositiveTestWithDataProvider" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.SignUpTests.registrationPositiveTestWithDataProvider&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SignUpTests.registrationPositiveTestWithDataProvider" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
         <item itemvalue="Gradle.SearchCarTests.searchPositiveTestCalendar" />
         <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_emptyCity" />
         <item itemvalue="Application.Experiments" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_firstDateAfterSecondDate" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762800617611</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary=" Calendar type listener testNG, WDListener">
+      <option name="closed" value="true" />
+      <created>1763147333170</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1763147333170</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
