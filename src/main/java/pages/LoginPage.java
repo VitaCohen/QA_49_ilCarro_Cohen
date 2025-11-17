@@ -33,6 +33,8 @@ public class LoginPage extends BasePage {
     WebElement btnNotRegistered;
 
 
+
+
     //Homework_7
    // @FindBy(xpath = "//div[@class = 'error']")
    // WebElement textErrorUnderFieldEmail;
@@ -62,6 +64,7 @@ public class LoginPage extends BasePage {
 
 
     public void clickBtnNotRegistered(){
+
         btnNotRegistered.click();
     }
 
@@ -83,6 +86,8 @@ public class LoginPage extends BasePage {
     }
 
 
+    public void clickBtnOk() {
+        btnOkPopUp.click();
 
-
+    }
 }

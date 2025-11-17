@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment=" Calendar type listener testNG, WDListener">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data_provider/UserDP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data_scv/IlCarroSignUp.csv" afterDir="false" />
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="HW_12 DataProvider UserDP, registrationPositiveTestWithDataProvider">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/enums/FooterMenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/FooterNavigationsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetCarWorkTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jpeg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/enums/HeaderMenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/enums/HeaderMenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +64,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.HomeTests.startTest.executor": "Run",
+    "Gradle.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture.executor": "Run",
+    "Gradle.LetCarWorkTests.addNewCarPositiveTest.executor": "Run",
     "Gradle.LetTheCarWorkTests.addNewCarPositiveTest.executor": "Run",
     "Gradle.LoginTests.loginErrorTextUnderFieldNegativeTest_wrongEmail.executor": "Run",
     "Gradle.LoginTests.loginNegativeTest_emailWOAt.executor": "Run",
@@ -94,25 +105,87 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects IDEA\QA_49\QA_49_ilCarro_Cohen\src\test\resources\data_scv" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects IDEA\QA_49\QA_49_ilCarro_Cohen\src\test\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
       <recent name="utils" />
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SignUpTests.registrationPositiveTestWithDataProvider">
-    <configuration name="Experiments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.Experiments" />
-      <module name="QA_49_ilCarro_Cohen.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.FooterNavigationsTests.iconTelegramNavigationTest">
+    <configuration name="FooterNavigationsTests.iconTelegramNavigationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.FooterNavigationsTests.iconTelegramNavigationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="LetCarWorkTests.addNewCarNegativeTest_withoutManufacture" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="LetCarWorkTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_tests.LetCarWorkTests.addNewCarPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -128,54 +201,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ui_tests.LoginTests.loginPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchCarTests.searchNegativeTest_emptyCity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchNegativeTest_emptyCity&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchCarTests.searchPositiveTestCalendar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.SearchCarTests.searchPositiveTestCalendar&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FooterNavigationsTests.iconTelegramNavigationTest" />
+        <item itemvalue="Gradle.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture" />
+        <item itemvalue="Gradle.LetCarWorkTests.addNewCarPositiveTest" />
         <item itemvalue="Gradle.SignUpTests.registrationPositiveTestWithDataProvider" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
-        <item itemvalue="Gradle.SearchCarTests.searchPositiveTestCalendar" />
-        <item itemvalue="Gradle.SearchCarTests.searchNegativeTest_emptyCity" />
-        <item itemvalue="Application.Experiments" />
       </list>
     </recent_temporary>
   </component>
@@ -437,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763147333170</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="HW_12 DataProvider UserDP, registrationPositiveTestWithDataProvider">
+      <option name="closed" value="true" />
+      <created>1763367361052</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1763367361052</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,6 +499,7 @@
     <MESSAGE value="added Search Negative tests, ClickWait" />
     <MESSAGE value="Started Calendar" />
     <MESSAGE value=" Calendar type listener testNG, WDListener" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Calendar type listener testNG, WDListener" />
+    <MESSAGE value="HW_12 DataProvider UserDP, registrationPositiveTestWithDataProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_12 DataProvider UserDP, registrationPositiveTestWithDataProvider" />
   </component>
 </project>

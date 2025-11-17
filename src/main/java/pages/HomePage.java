@@ -10,10 +10,11 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.PropertiesReader;
+import utils.enums.FooterMenuItem;
+import utils.enums.HeaderMenuItem;
 
 import java.time.Duration;
 import java.time.LocalDate;
-import java.util.Locale;
 
 public class HomePage extends BasePage {
 
@@ -41,7 +42,7 @@ public class HomePage extends BasePage {
     WebElement btnYalla;
 
 
-    public void clickBtnLoginHeader() {
+    public void clickBtnLoginHeader(HeaderMenuItem login) {
 
         btnLginHeader.click();
     }
@@ -145,6 +146,12 @@ public void typeSearchFormCalendar(String city, LocalDate dateFrom, LocalDate da
     public boolean validateUrl() {
         return new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.urlContains("results"));
+    }
+
+    public boolean clickFooterItem(FooterMenuItem item, String title){
+        driver.findElement(By.cssSelector(item.getLocator())).click();
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.titleContains(title));
     }
 
 

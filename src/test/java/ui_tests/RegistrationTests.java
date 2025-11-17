@@ -2,15 +2,13 @@ package ui_tests;
 
 import dto.User;
 import manager.ApplicationManager;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.RegistrationPage;
 import utils.TestNGListener;
-
-import java.lang.reflect.Method;
+import utils.enums.HeaderMenuItem;
 
 @Listeners(TestNGListener.class)
 public class RegistrationTests extends ApplicationManager {
@@ -23,7 +21,7 @@ public class RegistrationTests extends ApplicationManager {
                 .username("ev1@mail.com")
                 .password("123456Aa!")
                 .build();
-        new HomePage(getDriver()).clickBtnLoginHeader();
+        new HomePage(getDriver()).clickBtnLoginHeader(HeaderMenuItem.LOGIN);
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.clickBtnNotRegistered();
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
