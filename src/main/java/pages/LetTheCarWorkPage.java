@@ -70,7 +70,7 @@ public class LetTheCarWorkPage extends BasePage {
 
     private void addPhoto(String fileName){
         inputPhoto.sendKeys(
-                new File("src/test/resources"+File.separator+fileName)
+                new File("src/test/resources/jpeg.jpg")
                         .getAbsolutePath());
     }
 
