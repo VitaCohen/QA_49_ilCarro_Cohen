@@ -57,6 +57,24 @@
     "Gradle.HomeTests.startTest.executor": "Run",
     "Gradle.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture.executor": "Run",
     "Gradle.LetCarWorkTests.addNewCarPositiveTest.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_FutureYear.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_NotValidClassCar.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_NumberOfSeatsMinus.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_PriceisMinus.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_ToMuchSeats.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_TooBigPrice.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_TooLongRegistrationNumber.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_WOClassCar.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_WORegistrationNumber.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_WOSeats.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_WOYear.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_WrongYear.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_YearMinus.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_woManufacture.executor": "Run",
+    "Gradle.LetTheCarWorkTests.addNewCarNegativeTest_woModel.executor": "Run",
     "Gradle.LetTheCarWorkTests.addNewCarPositiveTest.executor": "Run",
     "Gradle.LoginTests.loginErrorTextUnderFieldNegativeTest_wrongEmail.executor": "Run",
     "Gradle.LoginTests.loginNegativeTest_emailWOAt.executor": "Run",
@@ -105,8 +123,8 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_woManufacture">
-    <configuration name="FooterNavigationsTests.iconTelegramNavigationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols">
+    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.FooterNavigationsTests.iconTelegramNavigationTest&quot;" />
+            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,7 +148,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LetCarWorkTests.addNewCarNegativeTest_withoutManufacture" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +161,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture&quot;" />
+            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +172,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LetCarWorkTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +185,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LetCarWorkTests.addNewCarPositiveTest&quot;" />
+            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +196,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_woManufacture" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_TooBigPrice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +209,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_woManufacture&quot;" />
+            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_TooBigPrice&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -228,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_woManufacture" />
+        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols" />
         <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarPositiveTest" />
-        <item itemvalue="Gradle.FooterNavigationsTests.iconTelegramNavigationTest" />
-        <item itemvalue="Gradle.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture" />
-        <item itemvalue="Gradle.LetCarWorkTests.addNewCarPositiveTest" />
+        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_TooBigPrice" />
+        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty" />
+        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus" />
       </list>
     </recent_temporary>
   </component>
@@ -469,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763405100208</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add car test, add picture, FooterNavigationsTests">
+      <option name="closed" value="true" />
+      <created>1763495634807</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1763495634807</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

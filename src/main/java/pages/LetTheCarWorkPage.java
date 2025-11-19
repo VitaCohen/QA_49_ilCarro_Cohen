@@ -38,6 +38,9 @@ public class LetTheCarWorkPage extends BasePage {
     @FindBy(id = "price")
     WebElement inputPrice;
 
+    @FindBy(id = "about")
+    WebElement inputAbout;
+
     @FindBy(id = "photos")
     WebElement inputPhoto;
     @FindBy(xpath = "//button[@type='submit']")
@@ -56,6 +59,7 @@ public class LetTheCarWorkPage extends BasePage {
         inputClass.sendKeys(car.getCarClass());
         inputSerialNumber.sendKeys(car.getSerialNumber());
         inputPrice.sendKeys(car.getPricePerDay() + "");
+        inputAbout.sendKeys(car.getAbout());
         addPhoto(car.getImage());
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.querySelector(\"button[type='submit']\").removeAttribute(\"disabled\")");
