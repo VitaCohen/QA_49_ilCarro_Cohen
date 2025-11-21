@@ -17,13 +17,13 @@ import static utils.UserFactory.*;
 @Listeners(TestNGListener.class)
 public class SignUpTests extends ApplicationManager {
 SignUpPage signUpPage;
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void goToSignUp(){
         new HomePage(getDriver()).clickBtnSignUpHeader();
         signUpPage= new SignUpPage(getDriver());
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void  registrationPositiveTest(){
         User user = positiveUser();
         signUpPage.typeLoginForm(user);

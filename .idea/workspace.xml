@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="add car test, add picture, FooterNavigationsTests">
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="HW_13 All AddNewCar Negative Tests">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/smoke_tests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SearchCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.FooterNavigationsTests.iconFacebookNavigationTest.executor": "Run",
     "Gradle.FooterNavigationsTests.iconTelegramNavigationTest.executor": "Run",
     "Gradle.HomeTests.startTest.executor": "Run",
     "Gradle.LetCarWorkTests.addNewCarNegativeTest_withoutManufacture.executor": "Run",
@@ -123,8 +130,8 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols">
-    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.QA_49_ilCarro_Cohen [smoke_tests]">
+    <configuration name="FooterNavigationsTests.iconFacebookNavigationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty&quot;" />
+            <option value="&quot;ui_tests.FooterNavigationsTests.iconFacebookNavigationTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,30 +169,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_tests.LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,13 +227,35 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="QA_49_ilCarro_Cohen [smoke_tests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="smoke_tests" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QA_49_ilCarro_Cohen [smoke_tests]" />
+        <item itemvalue="Gradle.FooterNavigationsTests.iconFacebookNavigationTest" />
+        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_TooBigPrice" />
         <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsMoreThan500symbols" />
         <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarPositiveTest" />
-        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_TooBigPrice" />
-        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_AboutIsEmpty" />
-        <item itemvalue="Gradle.LetTheCarWorkTests.addNewCarNegativeTest_PriceIsMinus" />
       </list>
     </recent_temporary>
   </component>
@@ -495,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763495634807</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="HW_13 All AddNewCar Negative Tests">
+      <option name="closed" value="true" />
+      <created>1763578365554</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1763578365554</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,6 +539,7 @@
     <MESSAGE value=" Calendar type listener testNG, WDListener" />
     <MESSAGE value="HW_12 DataProvider UserDP, registrationPositiveTestWithDataProvider" />
     <MESSAGE value="add car test, add picture, FooterNavigationsTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add car test, add picture, FooterNavigationsTests" />
+    <MESSAGE value="HW_13 All AddNewCar Negative Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_13 All AddNewCar Negative Tests" />
   </component>
 </project>

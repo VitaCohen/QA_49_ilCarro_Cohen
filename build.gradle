@@ -22,10 +22,14 @@ dependencies {
 
     implementation 'ch.qos.logback:logback-classic:1.5.18'
 
-
-
 }
 
 test {
     useTestNG()
+}
+
+task smoke_tests(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/smoke_tests.xml'
+    }
 }

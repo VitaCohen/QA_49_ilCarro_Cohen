@@ -16,13 +16,13 @@ public class SearchCarTests extends ApplicationManager {
 
     HomePage homePage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openHomePage() {
         homePage = new HomePage(getDriver());
 
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void searchPositiveTest() {
         String city = "Haifa";
         LocalDate dateFrom = LocalDate.of(2025, 12, 1);

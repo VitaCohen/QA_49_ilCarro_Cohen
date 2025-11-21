@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 @Listeners(TestNGListener.class)
 public class LoginTests extends ApplicationManager {
 
-    @Test (retryAnalyzer = RetryAnalizer.class)
+    @Test (groups = {"smoke"})   //(retryAnalyzer = RetryAnalizer.class)
     public void loginPositiveTest(Method method){
         User user = User.builder()
                 .username("iv@mail.com")
