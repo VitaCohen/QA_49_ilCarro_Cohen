@@ -33,7 +33,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
 
     }
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke", "car"})
     public static void addNewCarPositiveTest() {
         Car car = Car.builder()
                 .city("Haifa")
@@ -53,7 +53,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
     }
 
 
-    @Test
+    @Test(groups = {"negative"})
     public void addNewCarNegativeTest_woManufacture(){
         Car car = Car.builder()
                 .city("Haifa")
@@ -91,7 +91,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
         Assert.assertTrue(letTheCarWorkPage.isTextInErrorPresent("Model is required"));
     }
 
-    @Test
+    @Test(groups = {"negative"})
     public void addNewCarNegativeTest_YearMinus(){
         Car car = Car.builder()
                 .city("Haifa")
@@ -129,7 +129,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
         Assert.assertTrue(letTheCarWorkPage.isTextInErrorPresent("Year required"));
     }
 
-    @Test  //(BUG)
+    @Test(groups = {"negative"})  //(BUG)
     public void addNewCarNegativeTest_WrongYear(){
         Car car = Car.builder()
                 .city("Haifa")
@@ -167,7 +167,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
         Assert.assertTrue(letTheCarWorkPage.isTextInErrorPresent("Wrong year"));
     }
 
-    @Test
+    @Test(groups = {"negative"})
     public void addNewCarNegativeTest_NumberOfSeatsMinus(){
         Car car = Car.builder()
                 .city("Haifa")
@@ -283,7 +283,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
     }
 
 
-    @Test
+    @Test(groups = {"negative"})
     public void addNewCarNegativeTest_TooBigPrice(){
         Car car = Car.builder()
                 .city("Haifa")

@@ -22,7 +22,7 @@ public class SearchCarTests extends ApplicationManager {
 
     }
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke", "car"})
     public void searchPositiveTest() {
         String city = "Haifa";
         LocalDate dateFrom = LocalDate.of(2025, 12, 1);
@@ -56,7 +56,7 @@ public class SearchCarTests extends ApplicationManager {
 
     }
 
-    @Test
+    @Test(groups = {"negative"})
     public void searchNegativeTest_beforeToday() {
         String city = "Haifa";
         LocalDate dateFrom = LocalDate.of(2024, 12, 1);

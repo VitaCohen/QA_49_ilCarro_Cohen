@@ -1,3 +1,5 @@
+cd  C:\Projects IDEA\QA_49\QA_49_ilCarro_Cohen
+
 .\gradlew clean smoke_tests     run group smoke test
 
 .\gradlew clean smoke_contact_tests     run group smoke WO user group

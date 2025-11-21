@@ -23,7 +23,7 @@ SignUpPage signUpPage;
         signUpPage= new SignUpPage(getDriver());
     }
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke", "user"})
     public void  registrationPositiveTest(){
         User user = positiveUser();
         signUpPage.typeLoginForm(user);
@@ -46,7 +46,7 @@ SignUpPage signUpPage;
 
 
 
-    @Test
+    @Test(groups = {"negative"})
     public void registrationNegativeTest_emptyName(){
         User user = positiveUser();
         user.setFirstName("");

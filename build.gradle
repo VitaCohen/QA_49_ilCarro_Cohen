@@ -33,3 +33,23 @@ task smoke_tests(type: Test){
         suites 'src/test/resources/smoke_tests.xml'
     }
 }
+
+task smoke_car_tests(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/smoke_car_tests.xml'
+    }
+}
+
+task different_tests(type: Test){
+    useTestNG(){
+        def suite = System.getProperty('suite', 'smoke_tests')
+        if (suite.equalsIgnoreCase('smoke_car_tests')){
+            suites 'src/test/resources/smoke_car_tests.xml'
+        }else if (suite.equalsIgnoreCase('negative_tests')){
+            suites 'src/test/resources/negative_tests.xml'
+        }else {
+            suites 'src/test/resources/smoke_tests.xml'
+        }
+    }
+}
+

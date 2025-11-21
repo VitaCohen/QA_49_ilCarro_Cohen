@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 @Listeners(TestNGListener.class)
 public class LoginTests extends ApplicationManager {
 
-    @Test (groups = {"smoke"})   //(retryAnalyzer = RetryAnalizer.class)
+    @Test (groups = {"smoke","user"})   //(retryAnalyzer = RetryAnalizer.class)
     public void loginPositiveTest(Method method){
         User user = User.builder()
                 .username("iv@mail.com")
@@ -31,7 +31,7 @@ public class LoginTests extends ApplicationManager {
         Assert.assertTrue(loginPage.isLoggedDisplayed());
     }
 
-    @Test
+    @Test(groups = {"negative"})
     public void loginNegativeTest_wrongPassword(){
         User user = User.builder()
                 .username("iv@mail.com")
