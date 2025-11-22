@@ -48,7 +48,9 @@ public class HomePage extends BasePage {
     }
 
     public void clickBtnSignUpHeader() {
+
         btnSignUpHeader.click();
+        //clickWait(btnSignUpHeader, 5);
     }
 
 
