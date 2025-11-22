@@ -61,7 +61,6 @@ public class ApplicationManager {
 
         WebDriverListener webDriverListener = new WDListener();
         driver = new EventFiringDecorator<>(webDriverListener).decorate(driver);
-
         //driver.manage().timeouts().implicitlyWait(10);
 
     }
