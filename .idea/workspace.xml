@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="HW_14 Smoke tests, neative_tests, smoke_car_tests">
+    <list default="true" id="f093e4c8-6a87-45b0-8cab-217a955a9f49" name="Changes" comment="HW_14 Smoke tests,negative_tests, smoke_car_tests&#10;Browser_tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/enums/HeaderMenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/enums/HeaderMenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LetCarWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetCarWorkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LetTheCarWorkTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/smoke_tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/smoke_tests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -530,7 +533,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763757509020</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="HW_14 Smoke tests,neative_tests, smoke_car_tests&#10;Browser_tests">
+      <option name="closed" value="true" />
+      <created>1763842693120</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1763842693120</updated>
+    </task>
+    <task id="LOCAL-00034" summary="HW_14 Smoke tests,negative_tests, smoke_car_tests&#10;Browser_tests">
+      <option name="closed" value="true" />
+      <created>1763842803789</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1763842803789</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,6 +583,8 @@
     <MESSAGE value="HW_13 All AddNewCar Negative Tests" />
     <MESSAGE value="HW_14 Smoke tests" />
     <MESSAGE value="HW_14 Smoke tests, neative_tests, smoke_car_tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW_14 Smoke tests, neative_tests, smoke_car_tests" />
+    <MESSAGE value="HW_14 Smoke tests,neative_tests, smoke_car_tests&#10;Browser_tests" />
+    <MESSAGE value="HW_14 Smoke tests,negative_tests, smoke_car_tests&#10;Browser_tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_14 Smoke tests,negative_tests, smoke_car_tests&#10;Browser_tests" />
   </component>
 </project>

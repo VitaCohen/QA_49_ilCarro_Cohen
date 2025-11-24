@@ -33,7 +33,7 @@ public class LetTheCarWorkTests extends ApplicationManager {
 
     }
 
-    @Test(groups = {"smoke", "car"})
+    @Test//0(groups = {"smoke", "car"})
     public static void addNewCarPositiveTest() {
         Car car = Car.builder()
                 .city("Haifa")

@@ -17,7 +17,7 @@ public class LetCarWorkTests extends ApplicationManager {
     LoginPage loginPage;
     LetTheCarWorkPage letTheCarWorkPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() {
         User user = User.builder()
                 .username("iv@mail.com")
@@ -31,7 +31,7 @@ public class LetCarWorkTests extends ApplicationManager {
 
     }
 
-    @Test
+    @Test(groups = "smoke")
     public  void addNewCarPositiveTest(){
         Car car = Car.builder()
                 .city("Haifa")

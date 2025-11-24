@@ -7,7 +7,7 @@
             </run>
         </groups>
         <classes>
-            <class name="ui_tests.LetTheCarWorkTests"/>
+            <class name="ui_tests.LetCarWorkTests"/>
             <class name="ui_tests.LoginTests"/>
             <class name="ui_tests.SearchCarTests"/>
             <class name="ui_tests.SignUpTests"/>

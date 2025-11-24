@@ -28,13 +28,14 @@ public class ApplicationManager {
         return driver;
     }
 
+
     @BeforeMethod(alwaysRun = true)
     public void setup(){
         logger.info("Start testing " + LocalDate.now() +":" +  LocalTime.now());
        // driver = new ChromeDriver();
 
-       //ChromeOptions chromeOptions = new ChromeOptions();
-       // hromeOptions.addArguments("--headless");
+      // ChromeOptions chromeOptions = new ChromeOptions();
+      // chromeOptions.addArguments("--headless");
 
         switch (browser.toLowerCase()){
             case "firefox":
@@ -47,7 +48,7 @@ public class ApplicationManager {
                 break;
             case "chrome":
                 //driver = new ChromeDriver(chromeOptions);
-                driver = new ChromeDriver();
+               driver = new ChromeDriver();
                 logger.info("Start testing in browser Chrome");
                 break;
             default:
